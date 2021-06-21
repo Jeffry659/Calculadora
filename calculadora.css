@@ -1,0 +1,113 @@
+
+}
+body {
+  font-family: sans-serif; }
+
+.main {
+  
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  }
+.calculator {
+  display:block;
+  margin:0 auto;
+  padding:20px;
+  background-color:#030303;
+  width:300px;
+  height:470px;
+  border-radius: 25px; }
+  .calculator::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 10px 20px black;
+    box-shadow: 0 10px 20px black;
+    opacity: .3; }
+
+
+
+.screen {
+  width: 100%;
+  height: 120px;
+  text-align: right;
+  padding-right: 1rem;
+  color: white;
+  padding-top: .5rem;
+  background: #070707; }
+  .screen__top {
+    font-size: 1.5rem; }
+  .screen__content {
+    font-size: 4rem; }
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  margin-top: 5px; 
+  border-radius: 55px;}
+
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1em;
+  font-size: 1.21rem;
+  background: #373533;
+  position: relative;
+  z-index: 100;
+  border-radius: 50%;
+  color: white;  }
+  .button:nth-child(4n) {
+    background: #FC9F36; 
+  border-radius: 50%; 
+color: white;
+font-family:Arial Black; }
+
+  .button:nth-child(17) {
+   border-radius: 50%; 
+   font-family:Arial Black;  
+ color: white;}
+  .button:last-child {
+    border-radius: 50%; 
+  color: white;
+  font-family:Arial Black; 
+}
+  .button:not(:nth-child(18)):hover {
+    background: #747671;
+    cursor: pointer;
+color: white;
+  border-radius: 50%;
+  font-family:Arial Black; }
+
+ .button:nth-child(1) {
+    background: #A09E9C; 
+  border-radius: 50%; 
+color: white;
+font-family:Arial Black; }
+.button:nth-child(2) {
+    background: #A09E9C; 
+  border-radius: 50%; 
+color: white;
+font-family:Arial Black; }
+.button:nth-child(3) {
+    background: #A09E9C; 
+  border-radius: 50%; 
+color: white;
+font-family:Arial Black; }
